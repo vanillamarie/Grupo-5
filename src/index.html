@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal | GTI</title>
+</head>
+<body>
+
+    <!--------------------->
+    <!-- LINKS DOCUMENTOS-->
+    <!--------------------->
+    <link rel="stylesheet" href="app/css/main.css" rel="stylesheet">
+    <script src="app/js/main.js"></script>
+    <!-------------------------->
+    <!-- FIN LINKS DOCUMENTOS -->
+    <!-------------------------->
+
+
+    <!----------------->
+    <!-- MENÚ ARRIBA -->
+    <!----------------->
+    <header>
+        <section class="menu" id="inicio">
+            <nav class="menu-fixed">
+            <!-- Logo GTI -->
+            <a href="index.html"><img src="app/images/logoGTI.png" alt="Logo de GTI" class="logo"></a>
+  
+            <!-- Links del menú -->
+            <div id="myLinks" class="encima">
+                <a href="index.html">Inicio</a>
+                <a href="#Sobre_Nosotros">Nosotros</a>
+                <a href="#servicios" translate="yes">Servicios</a>
+                <a href="app/contacto.html">Contacto</a>
+                <a href="app/login.html">Iniciar sesión</a>
+            </div>
+
+            <a href="login.html" class="icono-login">
+                <img src="app/images/login.png" alt="Menú" class="menuImg">
+            </a>
+
+            <!-- Boton del menú hamburguesa -->
+            <div id="flex-end">
+                <a href="app/login.html" class="icono-login">
+                    <img src="app/images/login.png" alt="Menú" class="menuImg">
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="app/images/menu-icono.png" alt="Menú" class="menuImg">
+                </a>
+            </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--------------------->
+    <!-- FIN MENÚ ARRIBA -->
+    <!--------------------->
+
+
+    <!-------------------->
+    <!-- REDES SOCIALES -->
+    <!-------------------->
+    <section class="social">
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100079306556552" target="_blank" class="icon-facebook"><img src="app/images/facebook.png" alt="Icono Facebook" class="tamanyoLogo"></a></li>
+            <li><a href="http://www.twitter.com/GtiEmpresa" target="_blank" class="icon-twitter"><img src="app/images/twitter.png" alt="Icono Twitter" class="tamanyoLogo"></a></li>
+            <li><a href="mailto:gticontactobusinesss@gmail.com" class="icon-mail"><img src="app/images/mail.png" alt="Icono correo" class="tamanyoLogo"></a></li>
+        </ul>
+    </section>
+    <!------------------------>
+    <!-- FIN REDES SOCIALES -->
+    <!------------------------>
+
+
+    <!---------------------------->
+    <!-- CONTENIDO DE LA PÁGINA -->
+    <!---------------------------->
+
+    <!-- Frase de inicio -->
+    <div class="frase">
+        <h1 class="inicio"> <p class="monitoriza">Monitoriza</p> <p class="resto">tus cultivos</p> <p class="resto"> <span id="dest">DONDE</span>  y</p>  <p class="resto" id="dest">CUANDO</p> <p>quieras</p></h1> 
+        
+        <!--  Botón Call to action -->
+        <a href="app/contacto.html"><input type="submit" class="CallToAction" value="Contrata ya"></a>
+    </div>
+
+    <img src="app/images/PortatilYTelefono.png" alt="Imagen de portatil y movil con nuestra app" class="imagenDemostracion">
+
+    <!-- Flecha descubre mas -->
+    <div class="descubreMas" id="masContenido">
+        <a href="#masContenido" translate="yes">
+            <h3 class="descubreMasTexto">Descubre más</h3>
+            <img src="app/images/flecha-abajo.png" alt="Flecha descubre más" class="descubreMasFlecha">
+        </a>
+    </div>
+
+    <!-- Cuadro entre fondos -->
+    <div class="transicion"> 
+        <p><b>PRODUCE MÁS CON MENOS</b></p> 
+    </div>
+
+    <!-- Texto -->
+    <div class="inicioPagina">
+        <p><b>GTI es una App que te ayudará a tener mayor control en el desarrollo de tus cultivos</b></p>
+    </div>
+
+    <img src="app/images/cultivoTecnologia.jpg" alt="Imagen cultivo con tecnología" class="imagen2" id="servicios">
+    
+    <!--------------->
+    <!-- Servicios -->
+    <!--------------->
+    <section>      
+        <nav><h1>Nuestros servicios</h1></nav>
+
+        <div class="servicio">
+            <img src="app/images/humedad.png" alt="Imagen humedad" class="servicio-imagenes">
+            <h2>Humedad</h2>
+            <h3>Monitoriza los niveles de humedad</h3>
+        </div>
+
+        <div class="servicio">
+            <img src="app/images/temperatura.png" alt="Imagen temperatura" class="servicio-imagenes">
+            <h2>Temperatura</h2>
+            <h3>Podrás saber a que temperatura exacta se encuentran tus cultivos</h3>
+        </div>
+
+        <div class="servicio">
+            <img src="app/images/salinidad.png" alt="Imagen salinidad" class="servicio-imagenes">
+            <h2>Salinidad</h2>
+            <h3>Niveles de sal en el agua</h3>
+        </div>
+
+        <div class="servicio">
+            <img src="app/images/luz.png" alt="Imagen luz" class="servicio-imagenes">
+            <h2>Luz</h2>
+            <h3>Cuanta luz reciben al día</h3>
+        </div>
+    </section>
+    <!------------------->
+    <!-- Fin servicios -->
+    <!------------------->
+
+
+    <!------------>
+    <!--NOSOTROS-->
+    <!------------>
+
+    <section class="sobre_nosotros" id="Sobre_Nosotros">
+        <h2 class="tituloNosotros">Sobre Nosotros</h2>
+        <img src="../src/app/images/nosotros.png" alt="Imagen sobre nosotros">
+        <p class="nosotrosTexto">GTI es una start-up que se dedcia a vender sensores agrícolas. Ayudamos a cualquier persona interesada en monitorizar sus campos para conseguir la máxima producción</p>
+    </section>
+
+    <!------------>
+    <!--NOSOTROS-->
+    <!------------>
+
+
+    <!---------------->
+    <!--FLECHA SUBIR-->
+    <!---------------->
+    <a href="#inicio" translate="yes">
+        <img src="app/images/up-arrow.png" alt="Subir al inicio de la página" class="flechaSubir">
+    </a>
+    <!-------------------->
+    <!--FIN FLECHA SUBIR-->
+    <!-------------------->
+
+
+    <!------------>
+    <!-- FOOTER -->
+    <!------------>
+    <footer>
+        <div id="pie">
+            2022 &copy; GTI
+            <a href="mailto:gticontactobusinesss@gmail.com" id="footermail">gticontactobusinesss@gmail.com</a>
+        </div>
+    </footer>
+    <!---------------->
+    <!-- FIN FOOTER -->
+    <!---------------->
+        
+
+    <!-------------------------------->
+    <!-- FIN CONTENIDO DE LA PÁGINA -->
+    <!-------------------------------->
+
+</body>
+</html>

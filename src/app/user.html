@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página user | GTI</title>
+    <style>
+        #map{
+            width: 100%;
+            height: 87vh;
+            background-color: black;
+            margin-top: 92px;
+        }
+    </style>
+</head>
+<body>
+    <!--LINKS-->
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/main.js"></script>
+    
+    <!----------------->
+    <!-- MENÚ ARRIBA -->
+    <!----------------->
+    <header>
+        <section class="menu" id="inicio">
+            <nav class="menu-fixed">
+            <!-- Logo GTI -->
+            <a href="index.html"><img src="images/logoGTI.png" alt="Logo de GTI" class="logo"></a>
+      
+            <!-- Links del menú -->
+            <div id="myLinks" class="encima">
+                <a href="../index.html">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios" translate="yes">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html">Iniciar sesión</a>
+            </div>
+    
+            <!-- Boton del menú hamburguesa -->
+            <div id="flex-end">
+                <a href="login.html" class="icono-login">
+                    <img src="images/login.png" alt="Menú" class="menuImg">
+                </a>
+    
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="images/menu-icono.png" alt="Menú" class="menuImg">
+                </a>
+            </div>
+            </nav>
+        </section>
+    </header>
+    
+    <!--------------------->
+    <!-- FIN MENÚ ARRIBA -->
+    <!--------------------->
+    
+    <div id="map"></div>
+    <div id="selector-parcelas"></div>
+    
+<script>
+    let map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            mapTypeId: 'hybrid',
+            styles: [{
+                featureType: 'poi',
+                stylers: [{visibility: 'off'}]
+            },
+            {
+                featureType: 'transit',
+                stylers: [{visibility: 'off'}]
+            }],
+            mapTypeControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+                
+            center: {lat: 38.99924827830711, lng: -0.16912608316864733},
+            zoom: 17
+        });
+        map.setTilt(0);
+
+        let polygon1 = new google.maps.Polygon({
+            paths: [
+                {lat: 39.00006586210799, lng: -0.16808405141077898},
+                {lat: 38.999508297858824, lng: -0.16754735507447788},
+                {lat: 38.99881241692761, lng: -0.16837881727435286},  
+                {lat: 38.99938943668847, lng: -0.16914910165242147},
+                
+                ],
+            strokeColor: "#ff8000",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#ff8000",
+            fillOpacity: 0.35,
+            map: map
+        });
+
+        let polygon2 = new google.maps.Polygon({
+            paths: [
+                {lat: 38.99966605872632, lng: -0.16958568882365643},
+                {lat: 38.99934837551385, lng: -0.16919637541908572},
+                {lat: 38.998864284066386, lng: -0.16958012720359114},  
+                {lat: 38.999030690875024, lng: -0.16995831736803127},
+                {lat: 38.99941104782516, lng: -0.1696691131246359},
+                {lat: 38.99950829785351, lng: -0.16979424957610503},
+                ],
+            strokeColor: "#ff2308",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#ff2308",
+            fillOpacity: 0.35,
+            map: map
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    
+</body>
+</html>

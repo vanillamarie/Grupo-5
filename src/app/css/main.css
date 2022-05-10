@@ -1,0 +1,408 @@
+/*--------------------*/
+/* FUENTE PARA LA WEB */
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*------------------------*/
+/* FIN FUENTE PARA LA WEB */
+/*------------------------*/
+
+
+/*------------*/
+/* RESPONSIVE */
+/*------------*/
+@media (min-width: 1200px) {
+  .menu a.icon{
+    background: transparent;   /* Color de fondo */
+    display: block;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 50%;
+    left: 100%;
+  }
+
+  .icono-login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translate(-50%, 0%);
+  }
+}
+/*----------------*/
+/* FIN RESPONSIVE */
+/*----------------*/
+
+
+/*-------------------------*/
+/* PARTE DEL MENÚ SUPERIOR */
+/*-------------------------*/
+
+/* Estilo del menú */
+.menu {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Menú fijo arriba */
+.menu-fixed {
+  position:fixed;   /* Hace que la barra superior este siempre arriba */
+  top:0;
+  width:100%;
+  background-color: #fff;   /* Color de la barra superior */
+  z-index: 2;
+}
+
+#myLinks{
+  background-color: #fff;
+  color: #000 ;
+}
+
+/* Ocultar el menu cuando arrancamos la web */
+.menu #myLinks {
+    display: none;
+}
+
+/* Estilo del menú desplegado */
+.menu a {
+  color: black;   /* Color de las letras */
+  padding: 14px 16px;   /* Margen interior */
+  text-decoration: none;   /* Para que no salga la línea de link debajo de la palabra */
+  font-size: 17px;   /* Tamaño de la letra */
+  display: block;   /* Para que se mantenga */
+  background-color: #fff;
+  border-bottom: 1px solid #bababa;
+}
+
+
+.icono-login {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  transform: translate(-50%, 0%);
+}
+
+/* Estilo de las 3 barras */
+.menu a.icon {
+  background: transparent;   /* Color de fondo */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -13%;
+  transform: translate(-50%, 0);
+}
+
+/* Color cuando el cursor esta encima de una opción del menú */
+.encima a:hover {
+  background-color: #ddd;   /* Color de fondo de la opción */
+  color: black;   /* Color de las letras */
+}
+
+/* Tamaño logo */
+.logo{
+    height: 60px;
+}
+
+/* Tamaño barras menú */
+.menuImg{
+    height: 45px;
+    width: 45px;
+    margin: 7.5px;
+}
+/*-----------------------------*/
+/* FIN DEL MENÚ PARTE SUPERIOR */
+/*-----------------------------*/
+
+
+/*-------------------------------*/
+/* REDES SOCIALES A LA IZQUIERDA */
+/*-------------------------------*/
+
+/*Posicion de las barras*/
+.social {
+	position: fixed;   /* Posición fija en pantalla*/
+	left: 0;   /* Establecemos la barra en la izquierda */
+	top: 400px;   /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000;   /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+	list-style: none;
+}
+
+/* Estilo redes sociales cuando el raton esta encima */
+.social ul li a {
+	display: inline-block;
+	background: #000;   /* Color de fondo cuando el cursor esta encima */
+	padding: 7.5px 15px;   /* Posicion de los iconos */
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;   /* Transicion */
+	-o-transition:all 500ms ease;   /* Transicion */
+	transition:all 500ms ease;   /* Transicion */
+}
+
+/* Colores de las barras */
+.social ul li .icon-facebook {background:#3b5998;} 
+.social ul li .icon-twitter {background: #00abf0;}
+.social ul li .icon-mail {background: #666666;}
+
+.social ul li a:hover {
+	background: #000;   /* Cambiamos el fondo cuando el usuario pase el mouse */
+	padding: 10px 20px;   /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+/* Cambiar tamaño marco de los logos */
+.tamanyoLogo{
+  width: 15px;
+  height: 15px;
+  margin-left: 0;
+}
+
+/* Cambiar tamaño de los iconos */
+.icon-mail{
+  width: 40px;
+  height: 30px;
+}
+
+.icon-twitter{
+  width: 40px;
+  height: 30px;
+}
+
+.icon-facebook{
+  width: 40px;
+  height: 30px;
+}
+/*-----------------------------------*/
+/* FIN REDES SOCIALES A LA IZQUIERDA */
+/*-----------------------------------*/
+
+
+/*-------*/
+/* FONDO */
+/*-------*/
+body {
+  margin: 0;
+  color: #fff;
+  background-image: url(https://cdn.discordapp.com/attachments/894835924049993749/960557937401679952/planta-fondo.jpg);   /* Imagen como fondo */
+  background-color: whitesmoke;
+  height: 712px;   /* Longtud de la imagen */
+  background-size: cover;   /* Para que la imagen ocupe todo */
+  background-repeat:no-repeat;   /* Para que la imagen no se vea como un msaico */
+  background-position: center center;   /* Para que la imagen este centrada */
+  font-family: Montserrat;   /* Letra */
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;   /* Hace que las redes sociales esten pegadas a la izquierda */  
+}
+/*-----------*/
+/* FIN FONDO */
+/*-----------*/
+
+
+/*---------------*/
+/* TEXTO INICIAL */ 
+/*---------------*/
+.inicio{
+  margin-left: 15%;
+  margin-top: 125px;   /* Para que el texto no empiece debajo de el manú */
+}
+
+.monitoriza{
+  /*font-size: 48px;*/
+  color: #fff;
+}
+
+#dest{
+  color: #fff;
+}
+/*-------------------*/
+/* FIN TEXTO INICIAL */
+/*-------------------*/
+
+
+/*----------------*/
+/* CALL TO ACTION */
+/*----------------*/
+.CallToAction{
+  display: flex;
+  background-color: #ab026d;   /* Color del boton */
+  border: solid white 1px;   /* Borde del boton */
+  color: #fff;   /* Color de las letras */
+  width: 150px;
+  height: 60px;
+  margin-top: 30px;   /* Posicion eje X */
+  margin-left: 50%;   /* Posicion eje Y */
+  font-size: larger;   /* Tamaño de la letra */
+  border-radius: 15px;   /* Boton redondeado */
+  padding-left: 20px;   /* Para que el texto este centrado en el boton */
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-weight: bold;
+}
+/*--------------------*/
+/* FIN CALL TO ACTION */
+/*--------------------*/
+
+.imagenDemostracion{
+  width: 300px;
+  margin-top: -70px;
+}
+
+/*----------------------*/
+/* SECCION DESCUBRE MAS */
+/*----------------------*/
+div a {
+  text-decoration: none;   /* Para qe no tenga la linea debajo de link */
+  color: #fff;   /* Para que sea de color blanco en vez de azul */
+}
+
+.descubreMas{
+  margin: 25px 52.5%;   /* Posicion en la web en el eje X e Y*/
+  width: 200px;   /* Ancho de la caja que contiene todo */
+  transform: translate(-50%, -50%);
+}
+
+.descubreMasFlecha{
+  height: 50px;   /* Tamaño de la flecha */
+  width: auto;   /* Tamaño de la flecha */
+  margin-left: 40px;   /* Para que esté centrada respecto al texto */
+}
+/*---------------------------*/
+/*  FIN SECCION DESCUBRE MAS */
+/*---------------------------*/
+
+
+/* Cuadro entre imagen fondo y fondo color */
+.transicion{
+  padding-top: auto;
+  margin: -60px auto;
+  padding: 40px;
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  background-color: #409d42;
+}
+
+/* Frase de despues del cuadro */
+.inicioPagina{
+  color: #000;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Imagen cultivos con tecnologia */
+.imagen2{
+  margin-left: 50%;
+  width: 50%;
+  margin-top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*--------------------*/
+/* APARTADO SERVICIOS */
+/*--------------------*/
+nav h1{
+  color: #000;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.servicio{
+  color: #000;
+  width: 50%;
+  margin: 30px 25%;
+  text-align: center;
+}
+
+.servicio h2{
+  color: #409c41;
+}
+
+.servicio-imagenes{
+  width: 50%;
+}
+/*------------------------*/
+/* FIN APARTADO SERVICIOS */
+/*------------------------*/
+
+
+/*------------------------*/
+/* SECCION SOBRE NOSOTROS */
+/*------------------------*/
+.sobre_nosotros img{
+  margin-top: 20%;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+  margin-top: 20px;
+  border: none;
+  padding: none;
+}
+
+.tituloNosotros{
+  color: #000;
+  text-align: center;
+  text-decoration:underline;
+  margin-top: 20%;
+}
+
+.nosotrosTexto{
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/*----------------------------*/
+/* FIN SECCION SOBRE NOSOTROS */
+/*----------------------------*/
+
+
+/*--------------*/
+/* FLECHA SUBIR */
+/*--------------*/
+.flechaSubir{
+  width: 63px;
+  display: flex;
+  transform: translate(-100%, -50%);
+  margin-bottom: -20px;
+  margin-left: 98.5%;
+}
+
+
+
+/*--------*/
+/* FOOTER */
+/*--------*/
+#pie {
+  height:50px;
+  line-height:50px;   /* Para que el texto esté en el medio del footer verticalmente */
+  background:#409c41;
+  color:white;
+  text-align:center;   /* Para que este centrado el texto */
+  position:absolute;
+  bottom:1000000000000000000;   /* Para que siempre esté lo mas abajo posible de la página */
+  left:0;
+  width:100%;
+}
+
+#footermail{
+  text-decoration: none;   /* Para que no salga la linea debajo del correo */
+  margin-left: 25px;   /* Espacio entre el correo y el copyright */
+  color: #fff;
+  display: inline-flex;
+}
+
+.footer_email{
+  color: white;
+}
+/*------------*/
+/* FIN FOOTER */
+/*------------*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTI | Recuperar contraseña</title>
+</head>
+<body>
+    <!---------------------->
+    <!-- LINKS DOCUMENTOS -->
+    <!---------------------->
+    <link rel="stylesheet" href="../css/recuperarContrasenya.css">
+    <script src="../js/login.js"></script>
+    <form method="post" action="../login.php"></form>
+    <!-------------------------->
+    <!-- FIN LINKS DOCUMENTOS -->
+    <!--------------------------> 
+
+
+    <!----------------->
+    <!-- MENÚ ARRIBA -->
+    <!----------------->
+    <header>
+        <div class="menu">
+            <nav class="menu-fixed">
+                <!-- Logo GTI -->
+                <a href="../index.html"><img src="../images/logoGTI.png" alt="Logo de GTI" class="logo"></a>
+  
+                <!-- Links del menú -->
+                <div id="myLinks" class="encima">
+                    <a href="index.html">Inicio</a>
+                    <a href="#contact">Nosotros</a>
+                    <a href="#about">Servicios</a>
+                    <a href="../html/contacto.html">Contacto</a>
+                    <a href="../html/login.html">Iniciar sesión</a>
+                </div>
+                <!-- Boton del menú hamburguesa -->
+                <a href="../javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="../images/menu-icono.png" alt="Menú" class="logoMenu">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!--------------------->
+    <!-- FIN MENÚ ARRIBA -->
+    <!--------------------->
+
+
+    <!---------------------------------------->
+    <!-- CAJA CONTENIDO LOGIN -->
+    <!---------------------------------------->
+
+    <div id="contenedor">
+        <form action="login.php" method="POST">
+            
+            <!--Usuario-->
+            <label for="email">Porfavor introduzca un email para que te enviemos tu contraseña</label>
+            <input id="email" name="email" type="text" required placeholder="Introduce tu email">
+            
+            <!--Botón para logearse-->
+            <a href="formularioEnviado.html"><input type="submit" value="Recuperar contraseña"></a>
+        </form>
+        
+    </div>
+    <!------------------------------>
+    <!-- FIN CAJA CONTENIDO LOGIN -->
+    <!------------------------------>
+    
+</body>
+</html>

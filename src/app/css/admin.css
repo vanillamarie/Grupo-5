@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*------------*/
+/* RESPONSIVE */
+/*------------*/
+@media (min-width: 1200px) {
+    .menu a.icon{
+      background: transparent;   /* Color de fondo */
+      display: block;
+      position: absolute;
+      transform: translate(-50%, 0%);
+      top: 50%;
+      left: 100%;
+    }
+  
+    .icono-login {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 93%;
+      transform: translate(-50%, 0%);
+    }
+  }
+  /*----------------*/
+  /* FIN RESPONSIVE */
+  /*----------------*/
+
+
+#start{
+    margin-top: 90px;
+}
+
+
+
+
+
+/*-------------------------*/
+/* PARTE DEL MENÚ SUPERIOR */
+/*-------------------------*/
+
+/* Estilo del menú */
+.menu {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Menú fijo arriba */
+  .menu-fixed {
+    position:fixed;   /* Hace que la barra superior este siempre arriba */
+    top:0;
+    width:100%;
+    background-color: #fff;   /* Color de la barra superior */
+    z-index: 2;
+  }
+  
+  #myLinks{
+    background-color: #fff;
+    color: #000 ;
+  }
+  
+  /* Ocultar el menu cuando arrancamos la web */
+  .menu #myLinks {
+      display: none;
+  }
+  
+  /* Estilo del menú desplegado */
+  .menu a {
+    color: black;   /* Color de las letras */
+    padding: 14px 16px;   /* Margen interior */
+    text-decoration: none;   /* Para que no salga la línea de link debajo de la palabra */
+    font-size: 17px;   /* Tamaño de la letra */
+    display: block;   /* Para que se mantenga */
+    background-color: #fff;
+    border-bottom: 1px solid #bababa;
+  }
+  
+  
+  .icono-login {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transform: translate(-50%, 0%);
+  }
+  
+  /* Estilo de las 3 barras */
+  .menu a.icon {
+    background: transparent;   /* Color de fondo */
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -13%;
+    transform: translate(-50%, 0);
+  }
+  
+  /* Color cuando el cursor esta encima de una opción del menú */
+  .encima a:hover {
+    background-color: #ddd;   /* Color de fondo de la opción */
+    color: black;   /* Color de las letras */
+  }
+  
+  /* Tamaño logo */
+  .logo{
+      height: 60px;
+  }
+  
+  /* Tamaño barras menú */
+  .menuImg{
+      height: 45px;
+      width: 45px;
+      margin: 7.5px;
+  }
+  /*-----------------------------*/
+  /* FIN DEL MENÚ PARTE SUPERIOR */
+  /*-----------------------------*/
+
+
+
+
+
+html {
+    margin: 0px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-family: Montserrat;
+}
+/*
+borrar estilos
+ */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    font-family: Montserrat;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+/*
+borrar estilos
+ */
+
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: Montserrat;
+}
+:root {
+    --bs-white: #f1f1f1;
+    --bs-light: #f1f1f1;
+}
+
+
+.navegacion{
+    height: 4rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #f1f1f1;
+}
+.caja{
+    margin:auto auto;
+}
+.icono{
+    height: 2.5rem;
+}
+.mas{
+    margin-right:5px;
+    height: 1rem;
+}
+
+.tabla{
+    margin-bottom:10rem;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 4vw;
+    color: #2B0124;
+
+
+
+}
+p {
+    font-family: Helvetica;
+    font-size: 55px;
+    color:#2B0124;
+    text-align: center;
+    margin: 0;
+}
+
+.txttabla{
+    color: #2B0124;
+    size: 2rem;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: sans-serif;
+
+}
+th {
+    border-bottom: solid 2px #2B0124;
+    color: #2B0124;
+}
+td {
+    border-bottom: solid 1px #2B0124;
+    color: #2B0124;
+    padding: 1rem 4rem;
+}
+
+thead{
+    justify-content: center;
+    color: white;
+}
+
+/*footer*/
+footer {
+    border-top: 5px solid white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+
+}
+
+.iconoFooter {
+    margin-top: 20px;
+    position: relative;
+    height: 6.5vh;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.contenedorFooter {
+    margin-right: 35px;
+}
+
+.cosasgerente{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 11rem;
+}
+
+.boton{
+    font-family:Helvetica;
+    border: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5em 0.5em;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 2px 1px 2px #999;
+    background-color:#633B54;
+    text-decoration: none;
+    color: white;
+
+}
+/*
+formulartos
+ */
+.contactou {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.contactop {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.contactos {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.contacto2{
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 2rem;
+    opacity: 100%;
+    flex-direction: column;
+    margin:1rem auto;
+}
+
+.cn {
+    font-family: sans-serif;
+    color: #660555;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 0;
+}
+.formulario {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedornombre {
+    text-align: initial;
+    text-decoration: none;
+    margin: 0.4rem;
+    width: 85%;
+    height: 2rem;
+    border: #000 solid 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font: 400 1rem Helvetica;
+    padding: 0.5rem;
+}
+::-webkit-input-placeholder {
+    color: #2B0124;
+}
+.botonlogin {
+
+    font-family: Helvetica;
+    color: #000;
+    width: 85%;
+    height: 2.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 8px;
+    position: relative;
+    position: relative;
+    background-color: #f1f1f1;
+
+}
+.salida{
+    color:#2B0124;
+    font-size: 1.5rem;
+}
+
+
+.cerr {
+    /* background-color: chocolate;*/
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.cerrar {
+    padding: 1rem;
+    width: 1rem;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+}
+.table-reflow{
+    margin-top: 3rem;
+    background-color:#f1f1f1;
+}
+@media (min-width: 650px){
+    h1 {
+        font-size: 1.6rem;
+
+    }
+    .nombre {
+
+        font-size: 1.6rem;
+    }
+    .icono{
+        height: 3rem;
+    }
+    .mas{
+        margin-right:10px;
+        height: 1rem;
+    }
+}

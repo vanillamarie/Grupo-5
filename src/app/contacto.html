@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponte en contacto | GTI</title>
+    <style>
+    
+    input[type=button] {
+    margin-top: 10px;
+    width: 130px;
+    margin: 10% 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #820053;
+    }
+
+    </style>
+
+</head>
+<body>
+    <!--------------------->
+    <!-- LINKS DOCUMENTOS-->
+    <!--------------------->
+    <link rel="stylesheet" href="../app/css/contacto.css">
+    <script src="../app/js/main.js"></script>
+    <!-------------------------->
+    <!-- FIN LINKS DOCUMENTOS -->
+    <!-------------------------->
+
+
+    <!----------------->
+    <!-- MENÚ ARRIBA -->
+    <!----------------->
+    <header>
+        <section class="menu" id="inicio">
+            <nav class="menu-fixed">
+            <!-- Logo GTI -->
+            <a href="../index.html"><img src="../app/images/logoGTI.png" alt="Logo de GTI" class="logo"></a>
+  
+            <!-- Links del menú -->
+            <div id="myLinks" class="encima">
+                <a href="../index.html">Inicio</a>
+                <a href="#contact">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html">Iniciar sesión</a>
+            </div>
+
+            <a href="login.html" class="icono-login">
+                <img src="../app/login.png" alt="Menú" class="menuImg">
+            </a>
+
+            <!-- Boton del menú hamburguesa -->
+            <div id="flex-end">
+                <a href="login.html" class="icono-login">
+                    <img src="../app/images/login.png" alt="Menú" class="menuImg">
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="../app/images/menu-icono.png" alt="Menú" class="menuImg">
+                </a>
+            </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--------------------->
+    <!-- FIN MENÚ ARRIBA -->
+    <!--------------------->
+
+    <h2 id="Inicio_pagina">Contacta con nosotros</h2>
+
+    <div id="contenedor">
+
+        <form action="">
+            <!--Nombre-->
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" type="text" required placeholder="Introduzca su nombre">
+            
+            <!--Apellidos-->
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" name="apellidos" type="text" required placeholder="Introduzca sus apellidos">
+
+                        
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="text" required placeholder="Introduzca su email">
+
+            <!--Mensaje-->
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="textarea" rows="8" cols="30" required placeholder="Escribe aquí tu cunsulta"></textarea> 
+
+            <!--Botón para logearse-->
+            <a href="formularioEnviado.html"><input type="button" class="boton" id="boton" value="Enviar"></a>
+
+        </form>
+    
+        <!--Mensaje de error-->
+        <div id="error">
+            Datos incorrectos
+        </div>
+        <!--Fin mensaje de error-->
+
+    </div>
+
+</body>
+</html>
