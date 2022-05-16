@@ -211,6 +211,10 @@ body {
   margin-top: 125px;   /* Para que el texto no empiece debajo de el manú */
 }
 
+.frase h2{
+  margin-left: 15%;
+}
+
 .monitoriza{
   /*font-size: 48px;*/
   color: #fff;
@@ -230,11 +234,11 @@ body {
 .CallToAction{
   display: flex;
   background-color: #ab026d;   /* Color del boton */
-  border: solid white 1px;   /* Borde del boton */
+  border: solid white 3px;   /* Borde del boton */
   color: #fff;   /* Color de las letras */
   width: 150px;
   height: 60px;
-  margin-top: 30px;   /* Posicion eje X */
+  margin-top: 55px;   /* Posicion eje X */
   margin-left: 50%;   /* Posicion eje Y */
   font-size: larger;   /* Tamaño de la letra */
   border-radius: 15px;   /* Boton redondeado */
@@ -249,7 +253,8 @@ body {
 
 .imagenDemostracion{
   width: 300px;
-  margin-top: -70px;
+  margin-top: -55px;
+  margin-left: 100px;
 }
 
 /*----------------------*/
@@ -261,7 +266,7 @@ div a {
 }
 
 .descubreMas{
-  margin: 25px 52.5%;   /* Posicion en la web en el eje X e Y*/
+  margin: 25px 57%;   /* Posicion en la web en el eje X e Y*/
   width: 200px;   /* Ancho de la caja que contiene todo */
   transform: translate(-50%, -50%);
 }
@@ -279,7 +284,7 @@ div a {
 /* Cuadro entre imagen fondo y fondo color */
 .transicion{
   padding-top: auto;
-  margin: -60px auto;
+  margin: -62px auto;
   padding: 40px;
   width: 80%;
   height: 100px;
@@ -298,10 +303,9 @@ div a {
 
 /* Imagen cultivos con tecnologia */
 .imagen2{
-  margin-left: 50%;
-  width: 50%;
-  margin-top: 15%;
-  transform: translate(-50%, -50%);
+  margin-left: 16%;
+  width: 70%;
+  margin-bottom: 50px;
 }
 
 
@@ -339,9 +343,8 @@ nav h1{
 /*------------------------*/
 .sobre_nosotros img{
   margin-top: 20%;
-  margin-left: 50%;
-  transform: translate(-50%, 0%);
-  width: 90%;
+  margin-left: 10%;
+  width: 400px;
   margin-top: 20px;
   border: none;
   padding: none;
